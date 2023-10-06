@@ -101,7 +101,7 @@ Com essa biblioteca não há necessidade de ficar derrubando a api toda vez que 
 ```
 ...
 "scripts": {
-"start": "./node_modules/nodemon/bin/nodemon.js index.js "
+    "start": "./node_modules/nodemon/bin/nodemon.js index.js "
 },
 "dependencies": {
 "express": "^4.18.2",
@@ -140,14 +140,14 @@ Então faça um `new` dessa classe criando seu objeto, assim:
 
 ```
 const connection = new Sequelize(
-'testing',
-'root',
-'ANSKk08aPEDbFjDO',
-{
-dialect: "mysql",
-host: 'localhost',
-port: 3307
-}
+    'testing',
+    'root',
+    'ANSKk08aPEDbFjDO',
+    {
+        dialect: "mysql",
+        host: 'localhost',
+    port: 3307
+    }
 );
 ```
 
@@ -162,15 +162,15 @@ Uma vez feito isso, vamos criar a `model` (classe que representa a tabela dentro
 
 
 const Firm = connection.define('firm', {
-name: {
-type: Sequelize.STRING,
-},
-address: {
-type: Sequelize.STRING,
-},
-description: {
-type: Sequelize.TEXT
-}
+    name: {
+        type: Sequelize.STRING,
+    },
+    address: {
+        type: Sequelize.STRING,
+    },
+    description: {
+        type: Sequelize.TEXT
+    }
 })
 
 
