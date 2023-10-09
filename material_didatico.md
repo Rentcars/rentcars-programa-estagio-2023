@@ -106,13 +106,13 @@ Quando se fala em termos de web, frontend e backend são termos recorrentes. O f
 Existem linguagens que são utilizadas no backend, tais como: Node JS, Java, PHP e Python. Neste texto vamos trabalhar com Node JS.
 
 
-## O que será feito
+### O que será feito
 
 
 Vamos construir uma API REST. Esse serviço deve ser capaz de executar as quatro operações básicas: GET, POST, PUT e DELETE. Essas operações serão feitas sobre uma tabela que chamaremos de `firms`. Em outros termos, é uma tabela de _firmas_ que possui as seguintes colunas: name (nome), address (endereço), descrição (description).
 
 
-## Especificações Técnicas
+### Especificações Técnicas
 
 
 Esse tutorial deve ser feito de preferência em um computador com Linux (Ubuntu, Debian, Mint - afinal você quer se tornar um dev web, não é mesmo?), com Node JS LTS (versão 18) e o npm
@@ -122,7 +122,7 @@ Esse tutorial deve ser feito de preferência em um computador com Linux (Ubuntu,
 Você também deverá ter o _docker_ configurado em sua máquina uma vez que esse serviço consegue containerizar serviços, tal como um banco de dados em MySQL.
 
 
-## Iniciando a aplicação
+### Iniciando a aplicação
 
 
 O primeiro ponto consiste em iniciar o banco de dados. Para isso abra um terminal do seu computador e digite o seguinte comando (supondo que o Docker esteja instalado em sua máquina):
@@ -211,7 +211,7 @@ Com essa biblioteca não há necessidade de ficar derrubando a api toda vez que 
 Ou seja, adicione o atributo _scripts_ com o apontamento para script de nodemon. Feito isso, a subida da api se dá por executar o seguinte comando: `npm run start`na raiz do projeto.
 
 
-## Criando a estrutura
+### Criando a estrutura
 
 
 Como você pode observar no atributo _scripts_ dentro do package.json - o comando _start_ aponta para o arquivo _index.js_. Logo, crie esse arquivo na raiz do projeto.
@@ -422,7 +422,7 @@ app.get('/:id', (req, res) => {
 })
 ```
 
-## O código como um todo
+### O código como um todo
 
 
 ```
