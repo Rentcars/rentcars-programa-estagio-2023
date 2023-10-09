@@ -1,6 +1,6 @@
 # Texto Base
 
-Esse texto apresenta um introdutório dos aspectos relacionados ao desenvolvimento web. Esses aspectos são secionados em duas vertentes, _frontend_ e _backend_.
+Esse texto apresenta um introdutório dos aspectos relacionados ao desenvolvimento web. Esses aspectos são divididos em duas vertentes, _frontend_ e _backend_.
 
 ## FrontEnd
 
