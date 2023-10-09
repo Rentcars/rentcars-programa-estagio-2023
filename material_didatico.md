@@ -119,7 +119,7 @@ Esse tutorial deve ser feito de preferência em um computador com Linux (Ubuntu,
 (instalador de pacotes Node).
 
 
-Você também deverá ter o _docker_ configurado em sua máquina uma vez que esse serviço consegue containerizar serviços, tal como um banco de dados em MySQL.
+Você também deverá ter o _docker_ configurado em sua máquina uma vez que esse programa consegue containerizar serviços, tal como um banco de dados em MySQL.
 
 
 ### Iniciando a aplicação
@@ -137,7 +137,7 @@ docker run --name basic-mysql --rm -v /tmp/mysql-data:/var/lib/mysql -e MYSQL_RO
 Neste caso você está executando duas operações:
 
 
-1 - criando uma pata, em tmp, chamada mysql-data
+1 - criando uma pasta, em tmp, chamada mysql-data
 2 - criando o container de um banco de dados em MySQL com a base chamada 'testing', na porta 3307, usuário root e a senha ANSKk08aPEDbFjDO.
 
 
@@ -151,20 +151,15 @@ mkdir my_app
 ```
 
 
-
-
 Acesse esse diretório `cd my_app`
 
 
 Digite os seguintes comandos:
 
 
-
-
 ```
 npm install express
 ```
-
 
 Express é a biblioteca que usaremos para fazer a camada HTTP e REST do serviço. Digite também o seguinte comando:
 
@@ -178,10 +173,7 @@ npm install sequelize
 
 A _lib sequelize_ é um _ORM_ utilizada para fazer a interface com o banco de dados.
 
-
-
-
-Após a execução desse processo observe que foi criado uma pasta chamada node_modules, que é onde os pacotes são armazenados. Não apenas isso, como também foi criado um arquivo chamado _package.json_. Este, por sua vez, contêm informações envolvendo a versão dos pacotes, comandos de execução, entre outras questões que situam a aplicação.
+Após a execução desse processo observe que foi criado uma pasta chamada node_modules, que é onde os pacotes são armazenados. Não apenas isso, como também foi criado um arquivo chamado _package.json_. Este, por sua vez, contem informações envolvendo a versão dos pacotes, comandos de execução, entre outras questões que situam a aplicação.
 
 
 Execute também o seguinte comando
@@ -195,8 +187,6 @@ npm install nodemon
 Com essa biblioteca não há necessidade de ficar derrubando a api toda vez que a atualização de código acontecer. Para isso, dentro de package.json crie a seguinte estrutura:
 
 
-
-
 ```
 ...
 "scripts": {
@@ -207,7 +197,6 @@ Com essa biblioteca não há necessidade de ficar derrubando a api toda vez que 
 ...
 ```
 
-
 Ou seja, adicione o atributo _scripts_ com o apontamento para script de nodemon. Feito isso, a subida da api se dá por executar o seguinte comando: `npm run start`na raiz do projeto.
 
 
@@ -216,15 +205,11 @@ Ou seja, adicione o atributo _scripts_ com o apontamento para script de nodemon.
 
 Como você pode observar no atributo _scripts_ dentro do package.json - o comando _start_ aponta para o arquivo _index.js_. Logo, crie esse arquivo na raiz do projeto.
 
-
 Faça as importações dos serviços necessários, da seguinte forma:
-
-
 ```
 const sequelize = require('sequelize')
 const express = require('express')
 ```
-
 
 feito isso, acesse o objeto `Sequelize` dentro do atributo `sequelize`, da seguinte forma:
 
@@ -232,7 +217,6 @@ feito isso, acesse o objeto `Sequelize` dentro do atributo `sequelize`, da segui
 ```
 const Sequelize = sequelize.Sequelize
 ```
-
 
 Então faça um `new` dessa classe criando seu objeto, assim:
 
@@ -276,42 +260,28 @@ const Firm = connection.define('firm', {
 connection.sync({force: true})
 ```
 
-
 É digno de nota que a tabela não precisa existir dentro do banco de dados, pois a execução da model efetua essa criação automaticamente em `connection.sync({force: true})`.
 
-
-
-
 Feito isso, podemos iniciar a camada HTTP/REST do serviço - isso é feito na seguinte operação:
-
 
 ```
 const app = express()
 ```
 
-
 Como os serviços mais modernos se comunicam usando JSON, vamos anexar a seguinte linha
-
 
 ```
 app.use(express.json());
 ```
-
 
 para que o nosso serviço seja capaz de usar essa operacionalidade.
 
 
 ### POST
 
-
 Dentro de uma API REST, o verbo _POST_ é utilizado para realizar o registro de dados. Neste caso queremos fazer o registro de uma informação no banco de dados. Para isso, podemos adicionar o seguinte código:
 
-
-
-
 ```
-
-
 app.post('/', (req, res) => {
     const resp = {}
 
@@ -327,12 +297,9 @@ app.post('/', (req, res) => {
 ```
 
 
-O `try catch` fornece uma tentativa de erro. Mediante a model _Firm_ efetuamos o insert dos dados. Os atributos do JSON passado para a model devem possuir os mesmos nomes das colunas da tabela.
-
+O `try catch` fornece uma tratativa de erro. Mediante a model _Firm_ efetuamos o insert dos dados. Os atributos do JSON passado para a model devem possuir os mesmos nomes das colunas da tabela.
 
 Segue a estrutura do curl (você pode importar no Postman para avaliar o formato).
-
-
 
 
 ```
@@ -346,12 +313,9 @@ curl --location 'localhost:3000' \
 ```
 
 
-__Observação__ para tornar a api operacional deste já, adicione no final do script (e essa informação deve ficar sempre no final) as seguintes linha de código:
-
+__Observação__ para tornar a api operacional desde já, adicione no final do script (e essa informação deve ficar sempre no final) as seguintes linha de código:
 
 ```
-
-
 const port = 3000
 
 app.listen(port, () => {
@@ -359,17 +323,11 @@ app.listen(port, () => {
 })
 ```
 
-
 E então efetue um _start_ do serviço.
-
-
 
 
 ### GET
 Rotas GET são feitas para efetuar consulta de algum dado. Para acessar esses dados escritos na tabela, podemos criar a seguinte rota:
-
-
-
 
 ```
 app.get('/', (req, res) => {
@@ -395,9 +353,7 @@ Neste caso, todos os registros estarão retornando para o cliente final. Pense c
 
 ### GET com pesquisa por id
 
-
 Uma rota get com pesquisa por id pode ser feita da seguinte forma.
-
 
 ```
 app.get('/:id', (req, res) => {
