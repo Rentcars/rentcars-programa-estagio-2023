@@ -468,49 +468,6 @@ app.post('/', (req, res) => {
 })
 
 
-app.put('/:id', (req, res) => {
-    const resp = {}
-
-    try {
-        Firm.findOne({
-            where:{
-                id:req.params.id
-            }
-        })
-        .then(e => {
-            e.update(req.body)
-            
-            res.json(e)
-        })
-        
-    } catch (error) {
-        resp.status = 'fail'
-
-        res.json(resp)
-    }
-})
-
-app.delete('/:id', (req, res) => {
-    let resp = {}
-
-    try {
-        Campus.destroy({
-            where:{
-                id:req.params.id
-            }
-        })
-  
-        resp = {
-            status:'ok'
-        }
-    } catch (error) {
-        resp.status = 'fail'
-
-        res.json(resp)
-    }
-
-    res.json(resp)
-})
 
 const port = 3000
 
