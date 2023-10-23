@@ -20,7 +20,7 @@ Você deve completar as seguintes tarefas:
 
 3. Desenvolver endpoints de API para realizar as operações CRUD (Create, Read, Update, Delete) dos veículos.
 
-4. Implementar a estrutura de dados dos veículos conforme descrito no README.
+4. Implementar a estrutura de dados dos veículos conforme descrito abaixo.
 
 5. Testar a API e garantir que todas as operações funcionem corretamente.
 
@@ -28,14 +28,14 @@ Você deve completar as seguintes tarefas:
 
 ## Recursos
 
-## Banco de dados MySQL
+Abaixo fornecemos os recursos que você deve usar para realizar o seu projeto.
+
+### Banco de dados MySQL
 
 ```bash
 mkdir /tmp/mysql-data
 docker run --name basic-mysql --rm -v /tmp/mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=ANSKk08aPEDbFjDO -e MYSQL_DATABASE=testing -p 3307:3306 -it mysql:8.0
 ```
-
-
 
 ### Endpoints da API
 
