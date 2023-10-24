@@ -15,15 +15,10 @@ Este desafio tem como objetivo avaliar suas habilidades de desenvolvimento, incl
 Você deve completar as seguintes tarefas:
 
 1. Configurar o ambiente de desenvolvimento com Node.js e instalar as dependências necessárias (Express, mysql2, Sequelize, Nodemon).
-
 2. Criar um banco de dados MySQL para armazenar os dados dos veículos.
-
 3. Desenvolver endpoints de API para realizar as operações CRUD (Create, Read, Update, Delete) dos veículos.
-
 4. Implementar a estrutura de dados dos veículos conforme descrito abaixo.
-
 5. Testar a API e garantir que todas as operações funcionem corretamente.
-
 6. Documentar o projeto, incluindo instruções de uso e informações de configuração.
 
 ## Recursos
