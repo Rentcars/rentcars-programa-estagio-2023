@@ -74,7 +74,7 @@ A avaliação será baseada nos seguintes critérios:
 
 ## 5 Entrega
 
-Você deve entregar o projeto em um repositório Git (por exemplo, no GitHub) até a data limite especificada. Certifique-se de incluir um README atualizado no repositório que explique como configurar e executar o projeto.
+Você deve entregar o projeto em um repositório Git público (por exemplo, no GitHub) até a data limite especificada. Certifique-se de incluir um README atualizado no repositório que explique como configurar e executar o projeto.
 
 ## 6 Extra
 
