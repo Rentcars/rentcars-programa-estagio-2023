@@ -62,6 +62,11 @@ A estrutura de um objeto de veículo é a seguinte:
 
 ## Critérios de Avaliação
 
+O frontend deverá seguir essa screenshot 
+
+![image](https://github.com/Rentcars/rentcars-programa-estagio-2023/assets/16747713/f7ab696a-bcdd-4ce5-bed7-b4bd273dd464)
+
+
 A avaliação será baseada nos seguintes critérios:
 
 - Conformidade com os requisitos do projeto.
