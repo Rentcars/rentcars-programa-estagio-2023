@@ -39,6 +39,8 @@ O projeto fornece os seguintes endpoints para gerenciar veículos:
 - `GET /veiculos`: Retorna a lista de todos os veículos.
 - `GET /veiculos/:id`: Retorna os detalhes de um veículo específico com base no ID.
 - `POST /veiculos`: Cria um novo veículo.
+- `PUT /veiculos/:id`: Atualiza os detalhes de um veículo existente com base no ID.
+- `DELETE /veiculos/:id`: Exclui um veículo com base no ID.
 
 A estrutura de um objeto de veículo é a seguinte:
 
@@ -74,21 +76,14 @@ A avaliação será baseada nos seguintes critérios:
 
 ## 5 Entrega
 
-Você deve entregar o projeto em um repositório Git (por exemplo, no GitHub) até a data limite especificada. Certifique-se de incluir um README atualizado no repositório que explique como configurar e executar o projeto.
+Você deve entregar o projeto em um repositório **público** Git (por exemplo, no GitHub) até a data limite especificada. Certifique-se de incluir um README atualizado no repositório que explique como configurar e executar o projeto.
 
 ## 6 Extra
 
-Você pode, também, desenvolver as rotas:
-
-- `PUT /veiculos/:id`: Atualiza os detalhes de um veículo existente com base no ID.
-- `DELETE /veiculos/:id`: Exclui um veículo com base no ID.
-
-O código dessas rotas será considerado como um extra pelo avaliador. Portanto, a não entrega dessas rotas não o desqualifica do processo seletivo. Entretanto, esse desenvolvimento a mais será visto como um diferencial.
-
-O mesmo ocorre para o item 4 se o canditado fizer a utilização de um framework de _SPA_ como React, VueJs ou Angular.
+Realizar o item 4 utilizando framework de _SPA_ como React, VueJs ou Angular será considerado como um extra pelo avaliador. Portanto, a não utilização dessas ferramentas não o desqualifica do processo seletivo. Entretanto, esse desenvolvimento a mais será visto como um diferencial.
 
 ## 7 Prazo
 
-O prazo para a entrega deste desafio é **23:59 de 05 de Novembro**.
+O prazo para a entrega deste desafio é **23:59 de 05 de Novembro de 2023**.
 
 Boa sorte e divirta-se desenvolvendo o projeto! Se tiver alguma dúvida, não hesite em entrar em contato. Estamos ansiosos para ver suas soluções.
