@@ -89,6 +89,6 @@ O mesmo ocorre para o item 4 se o canditado fizer a utilização de um framework
 
 ## 7 Prazo
 
-O prazo para a entrega deste desafio é **TBD**.
+O prazo para a entrega deste desafio é **23:59 de 05 de Novembro**.
 
 Boa sorte e divirta-se desenvolvendo o projeto! Se tiver alguma dúvida, não hesite em entrar em contato. Estamos ansiosos para ver suas soluções.
