@@ -85,7 +85,7 @@ Você pode, também, desenvolver as rotas:
 
 O código dessas rotas será considerado como um extra pelo avaliador. Portanto, a não entrega dessas rotas não o desqualifica do processo seletivo. Entretanto, esse desenvolvimento a mais será visto como um diferencial.
 
-O mesmo ocorre para o item 4 se o canditado fizer a utilização de um framework de spa como React, VueJs ou Angular.
+O mesmo ocorre para o item 4 se o canditado fizer a utilização de um framework de _SPA_ como React, VueJs ou Angular.
 
 ## 7 Prazo
 
